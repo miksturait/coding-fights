@@ -1,27 +1,7 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <%= @code.user %>
-</p>
-
-<p>
-  <strong>Source:</strong>
-  <%= markdown(@code.source) %>
-</p>
-
-<%= link_to 'Edit', edit_code_path(@code) %> |
-<%= link_to 'Back', codes_path %>
-
-<% @code.children.each do |code| %>
-  <p>
-    <%= code.user %>
-  </p>
-
-  <p>
-    <strong>Source:</strong>
-    <%= code.source %>
-  </p>
-<% end %>
+<ul><%= render @code %></ul>
+<ul><%= render @code.children %></ul>
 
 <div class='well'>
   <h3>Create your request:</h3>

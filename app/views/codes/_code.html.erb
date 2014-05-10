@@ -1,0 +1,14 @@
+<li>
+  <p><strong><%= link_to "Code of #{code.user}", code %></strong></p>
+  <p>
+    <strong>Source:</strong>
+    <%= markdown(code.source) %>
+  </p>
+  <div>
+    <%= link_to 'List', codes_path %> |
+    <%= link_to 'Edit', edit_code_path(code) %> |
+    <%= link_to 'Destroy', code, method: :delete,
+      data: { confirm: 'Are you sure?' }
+    %>
+  </div>
+</li>

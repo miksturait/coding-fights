@@ -1,27 +1,7 @@
 <h1>Listing codes</h1>
 
-<table class='table table-hover'>
-  <thead>
-    <tr>
-      <th>User</th>
-      <th>Source</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @codes.each do |code| %>
-      <tr>
-        <td><%= code.user %></td>
-        <td><%= code.source %></td>
-        <td><%= link_to 'Show', code %></td>
-        <td><%= link_to 'Edit', edit_code_path(code) %></td>
-        <td><%= link_to 'Destroy', code, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
+<ul>
+<%= render @codes %>
+</ul>
 
 <%= link_to 'New Code', new_code_path, class: 'btn btn-primary' %>
