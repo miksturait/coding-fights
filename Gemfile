@@ -46,6 +46,10 @@ end
 
 group :development, :test do
   gem 'rspec-rails', '~> 3.0.0.beta'
+  gem 'pry'
+  gem 'pry-rescue'
+  gem 'pry-debugger'
+  gem 'pry-stack_explorer'
 end
 
 group :production do
