@@ -52,3 +52,8 @@ group :production do
   gem 'rails_12factor'
 end
 gem 'dotenv-rails'
+
+# formating code
+gem 'redcarpet'
+gem 'albino'
+gem 'nokogiri'
