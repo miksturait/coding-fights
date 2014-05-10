@@ -1,6 +1,6 @@
 <h1>Editing code</h1>
 
-<%= render 'form' %>
+<%= render 'form', code: @code, parent_code: nil %>
 
 <%= link_to 'Show', @code %> |
 <%= link_to 'Back', codes_path %>
