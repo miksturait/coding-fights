@@ -59,5 +59,5 @@ gem 'dotenv-rails'
 
 # formating code
 gem 'redcarpet'
-gem 'albino'
+gem 'pygments.rb'
 gem 'nokogiri'

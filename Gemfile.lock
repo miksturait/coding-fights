@@ -28,8 +28,6 @@ GEM
       minitest (~> 5.1)
       thread_safe (~> 0.1)
       tzinfo (~> 1.1)
-    albino (1.3.3)
-      posix-spawn (>= 0.3.6)
     arel (5.0.1.20140414130214)
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
@@ -93,6 +91,9 @@ GEM
     pry-stack_explorer (0.4.9.1)
       binding_of_caller (>= 0.7)
       pry (>= 0.9.11)
+    pygments.rb (0.5.4)
+      posix-spawn (~> 0.3.6)
+      yajl-ruby (~> 1.1.0)
     quiet_assets (1.0.2)
       railties (>= 3.1, < 5.0)
     rack (1.5.2)
@@ -176,12 +177,12 @@ GEM
     uglifier (2.5.0)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
+    yajl-ruby (1.1.0)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  albino
   coffee-rails (~> 4.0.0)
   dotenv-rails
   jbuilder (~> 2.0)
@@ -191,6 +192,7 @@ DEPENDENCIES
   pry-debugger
   pry-rescue
   pry-stack_explorer
+  pygments.rb
   quiet_assets
   rails (= 4.1.0)
   rails_12factor
