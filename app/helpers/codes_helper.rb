@@ -1,5 +1,3 @@
-require 'pygments'
-
 # Codes helper
 module CodesHelper
   def markdown(text)
@@ -7,6 +5,10 @@ module CodesHelper
     render_options = { hard_wrap: true, filter_html: true }
     render = Redcarpet::Render::HTML.new(render_options)
     markdown = Redcarpet::Markdown.new(render, options)
-    markdown.render(text).html_safe
+    syntax_highligter(markdown.render(text)).html_safe
+  end
+
+  def syntax_highligter(html)
+    html
   end
 end
