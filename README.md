@@ -4,6 +4,10 @@ Nazwa projektu:
     Coding Fights
 
 
+Przed pierwszym uruchomieniem (Debian/Ubuntu/Linux Mint):
+sudo apt-get install python-pygments
+
+
 Cel:
 
     Stworzyć miejsce gdzie programiści różnych języków i technologii mogą walczyć na refactoring kodu. Stawiać wyzwania i toczyć bitwy by jak najbardziej rozwijać swoje umiejętności tworzenia dobrego oprogramowania.
