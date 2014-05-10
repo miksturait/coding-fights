@@ -1,7 +1,5 @@
 <h1>Listing codes</h1>
 
-<ul>
-<%= render @codes %>
-</ul>
+<ul><%= render partial: :codes, collection: @codes %></ul>
 
 <%= link_to 'New Code', new_code_path, class: 'btn btn-primary' %>

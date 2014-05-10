@@ -1,10 +1,10 @@
 <p id="notice"><%= notice %></p>
 
-<ul><%= render @code %></ul>
-<ul><%= render @code.children %></ul>
+<ul><%= render code %></ul>
+<ul><%= render code.children %></ul>
 
 <div class='well'>
   <h3>Create your request:</h3>
 
-  <%= render 'form', code: Code.new, parent_code: @code %>
+  <%= render 'form', code: Code.new, parent_code: code %>
 </div>
