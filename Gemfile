@@ -61,3 +61,5 @@ gem 'dotenv-rails'
 gem 'redcarpet'
 gem 'pygments.rb'
 gem 'nokogiri'
+
+gem 'decent_exposure'
